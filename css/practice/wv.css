@@ -1,0 +1,20 @@
+div{
+    height: 1000px;
+    padding: 10px;
+}
+.img{
+   background-size: cover;
+   background: linear-gradient(rgba(34, 214, 234, 0.534));
+   background-image: url(./img/wordpress-589121.jpg);
+}
+p{
+    width: 600px;
+    
+}
+::selection{
+    color: rgb(59, 83, 83);
+    background: rgb(15, 118, 144);
+}
+h1{
+    color: rgb(59, 83, 83);
+}

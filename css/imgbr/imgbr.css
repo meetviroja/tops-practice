@@ -1,0 +1,14 @@
+div{
+    height: 600px;
+    padding: 20px;
+}
+.bg{
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(./1122095_OPQ7OX0.jpg) 50 round;
+}
+.img{
+    background-image: url(./poster.jpg);
+    background-size:70%;
+    background-repeat: no-repeat;
+}

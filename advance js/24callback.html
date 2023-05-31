@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function complate(){
+            console.log("your fuction is complate");
+        }
+        function complate2(){
+            console.log("your fuction is complate twis");
+        }
+        function add(x,y , callback) {
+            console.log(x + y );
+            // complate()
+            // complate2()
+            callback()
+        }
+
+        let a = 5
+        let b = 10
+        // let c = 15
+
+        add(a , b  ,complate2)
+    </script>
+    
+</body>
+</html>

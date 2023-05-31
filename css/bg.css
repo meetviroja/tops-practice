@@ -1,0 +1,19 @@
+div{
+    height: 500px;
+    padding: 20px;
+    border: 20px dashed rgb(255, 0, 212);
+    margin: 10px 0;
+}
+.background-color{
+    background-color: #2bbde2;
+}
+.background-img{
+    background-image: url(./img/poshter.png);
+}
+.background-repeat{
+    background-image: url(./img/download.jpg);
+    background-repeat: repeat-x;
+}
+.flag{
+    background: linear-gradient(white,rgb(2, 193, 252),blue)
+}

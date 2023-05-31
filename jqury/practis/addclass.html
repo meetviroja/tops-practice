@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            align-items: center;
+            border: 3px black solid;
+            width: 45%;
+            margin: 0 auto;
+            transition: 2s;
+        }
+
+        .bg {
+            background-color: hotpink;
+            color: aliceblue;
+            padding: 100px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="box">
+        <h1>my name is meet patel</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore quibusdam impedit dolore, nisi libero
+            dolorum pariatur officiis dolorem nam itaque deleniti, qui ullam, voluptatum vitae ipsam tenetur temporibus
+            necessitatibus eveniet?</p>
+    </div>
+    <button id="addclass">add class</button>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#addclass").click(function () {
+                $("#box").addClass("bg padding")
+            })
+
+        })
+    </script>
+</body>
+
+</html>

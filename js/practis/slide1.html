@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1000px;
+            height: 600px;
+            box-shadow: 0 0 10px black;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .img {
+            transition: 1s;
+            position: absolute;
+        }
+
+        .nav {
+            text-align: center;
+        }
+
+        .nav button {
+            padding: 12px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://picsum.photos/id/37/1000/600" class="img" alt="">
+        <img src="https://picsum.photos/id/383/1000/600" class="img" alt="">
+        <img src="https://picsum.photos/id/39/1000/600" class="img" alt="">
+        <img src="https://picsum.photos/id/31/1000/600" class="img" alt="">
+        <img src="https://picsum.photos/id/132/1000/600" class="img" alt="">
+        <img src="https://picsum.photos/id/237/1000/600" class="img" alt="">
+        <img src="https://picsum.photos/id/37/1000/600" class="img" alt="">
+        <img src="https://picsum.photos/id/38/1000/600" class="img" alt="">
+    </div>
+    <div class="nav">
+        <button onclick="goprev()">
+            prev
+        </button>
+        <button onclick="gonext()">
+            next
+        </button>
+    </div>
+    <script>
+        let slide = document.querySelectorAll('.img')
+        let count = 0
+
+        slide.forEach(
+            (img, index) => {
+                img.style.left = `${index * 100}%`
+            }
+        )
+        const slideImage = () => {
+            slide.forEach(
+                (img) => {
+                    img.style.transform = `translateX(${count * 100}%)`
+                }
+            )
+        }
+
+        const goprev = () => {
+            count++
+            slideImage()
+        }
+        const gonext = () => {
+            count--
+            slideImage()
+        }
+    </script>
+</body>
+
+</html>

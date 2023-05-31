@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            transition: 2s;
+            border: 3px solid black;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .style {
+            background-color: hotpink;
+            color: white;
+            padding: 100px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="box">
+        <h1>toggle class</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ut porro voluptas amet nobis vitae minus
+            quod et alias minima architecto, earum omnis, laudantium facilis quae maiores itaque harum nisi!</p>
+    </div>
+    <!-- <button id="add">add</button>
+    <button id="remove">remove</button> -->
+    <button id="toggle">toggle</button>
+
+
+    <script>
+        // $(document).ready(function () {
+        //     $("#add").click(function () {
+        //         $("#box").addClass("style")
+        //     })
+        // })
+        // $(document).ready(function () {
+        //     $("#remove").click(function () {
+        //         $("#box").removeClass("style")
+        //     })
+        // })
+        $(document).ready(function () {
+            $("#toggle").click(function () {
+                $("#box").toggleClass("style")
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+.color1{
+    width: 1440px;
+    height: 796px;
+    background-color: #e8631c;
+}
+section{
+    background-image: url(./music-img/1\ background.png);
+}
+header{
+    width: 1440px;
+    height: 103px;
+    background-color: #303030;
+    display: flex;
+}
+.head{
+    margin: 40px;
+    padding: 0 0 0 5px ;
+;
+}
+li{
+    display: inline;
+    color: white;
+    margin: 40px;
+    line-height: 0px;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    margin: 13px 0 0 10px;
+    padding: 0 0 0 0;
+}
+.search{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.countainer{
+    background-image: url(./img/wordpress-589121.jpg);
+}
+.page2{
+    background-size: cover;
+}

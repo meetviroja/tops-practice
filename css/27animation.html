@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+		*{box-sizing: border-box;}
+
+		.products
+		{
+			height: auto;
+			width: 100%;
+			background: lightgray;
+			display: flex;
+			flex-wrap: wrap;
+		
+		}
+		
+		.card 
+		{
+			height: 450px;
+			width: 20%;
+			background: transparent;
+			
+			position: relative;
+			box-shadow: 0 0 10px black;
+		}
+
+
+		.card .image
+		{
+			height: 300px;
+			width: 300px;
+			background: transparent;
+
+		
+		}
+
+		.card .image .front,.back
+		{
+			height: 300px;
+			width: 300px;
+			position: absolute;
+			backface-visibility: hidden;
+			transition: 1s;
+			
+		
+		}
+
+
+		.card .image .back
+		{
+
+			transform: rotateY(180deg);		
+		
+		}
+
+		.card .image:hover .back
+		{
+			transform: rotateY(0deg);
+		}
+
+		.card .image:hover .front
+		{
+			transform: rotateY(180deg);
+		}
+
+
+
+		.card .quick
+		{
+			height: 50px;
+			width: 300px;
+			background: lightblue;
+			text-align: center;
+			line-height: 50px;
+			position: absolute;
+			top: 0;
+
+			opacity: 0;
+		
+		}
+
+		.card:hover .quick
+		{
+			animation: animate linear 1s forwards;
+		}
+
+		.card .info
+		{
+			height: 150px;
+			width: 300px;
+			background: lightcoral;
+			text-align: center;
+			padding-top: 20px;
+		
+		}
+
+		@keyframes animate
+		{
+			0%{opacity: 0;top: 0;}
+			20%{opacity: 0.2;top: 50px;}
+			40%{opacity: 0.4;top: 100px}
+			60%{opacity: 0.6;top: 150px}
+			80%{opacity: 0.8;top: 200px}
+			100%{opacity: 1;top: 250px}
+		}
+
+		.card span 
+		{
+			background: blue;
+			color: #fff;
+			padding: 5px;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			right: 0;
+		}
+
+		@media(max-width: 500px)
+
+		{
+			.card {width: 100%;padding-left: 20%;margin-bottom: 40px;}
+
+				.products{background: transparent;}
+
+		}
+	</style>
+</head>
+<body>
+
+	<div class="products">
+
+			<div class="card">
+
+
+		<span>New</span>
+
+		<div class="image">
+
+			<div class="front">
+				
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+
+			</div>
+
+			<div class="back">
+				
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+
+			</div>
+
+		</div>
+		<div class="quick">Quick View</div>
+		<div class="info">
+			<p style="margin: 0;">Name</p>
+			<p>price</p>
+			<p>Add to cart</p>
+		</div>
+		
+	</div>
+
+
+	<div class="card">
+
+
+		<span>New</span>
+
+		<div class="image">
+
+			<div class="front">
+				
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+
+			</div>
+
+			<div class="back">
+				
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+
+			</div>
+
+		</div>
+		<div class="quick">Quick View</div>
+		<div class="info">
+			<p style="margin: 0;">Name</p>
+			<p>price</p>
+			<p>Add to cart</p>
+		</div>
+		
+	</div>
+
+
+	<div class="card">
+
+
+		<span>New</span>
+
+		<div class="image">
+
+			<div class="front">
+				
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+
+			</div>
+
+			<div class="back">
+				
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+
+			</div>
+
+		</div>
+		<div class="quick">Quick View</div>
+		<div class="info">
+			<p style="margin: 0;">Name</p>
+			<p>price</p>
+			<p>Add to cart</p>
+		</div>
+		
+	</div>
+
+
+
+	<div class="card">
+
+
+		<span>New</span>
+
+		<div class="image">
+
+			<div class="front">
+				
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+
+			</div>
+
+			<div class="back">
+				
+			<img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" height="100%" width="100%">
+
+			</div>
+
+		</div>
+		<div class="quick">Quick View</div>
+		<div class="info">
+			<p style="margin: 0;">Name</p>
+			<p>price</p>
+			<p>Add to cart</p>
+		</div>
+		
+	</div>
+		
+	</div>
+
+
+
+
+
+
+</body>
+</html>

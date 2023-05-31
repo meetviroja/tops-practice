@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 500px;
+            padding: 20px;
+            border: 20px dashed red;
+            margin: 10px 0;
+        }
+        .background-color{
+            background-color: rgba(194, 14, 200, 0.921);
+        }
+        .background-img{
+            background-image: url(./img/download.jpg);
+        }
+        .background-repeat{
+            background-image: url(./img/download.jpg);
+            background-repeat:repeat-x;
+            background-repeat: repeat-y;
+        }
+        .background-attachment{
+            background-image: url(./img/download.jpg);
+            background-attachment: fixed;
+        }
+        .background-position{
+            background-image: url(./img/download.jpg);
+            background-repeat: no-repeat;
+            background-position: left;
+            background-position: right;
+            background-position: center;
+            background-position: 100px;
+        }
+        .background-size{
+            background-image: url(./img/download.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position: right 100px; */
+            /* background-size: contain; */
+        }
+        .background-clip{
+            background-image: url(./img/download.jpg);
+            background-clip: content-box;
+           padding: 20px;
+        }
+        .background{
+            background: url(./img/download.jpg);
+        }
+        .background-flag{
+            background: linear-gradient(360deg ,orange, white, green);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>background-color</li>
+        <li>background-img</li>
+        <li>background-repeat</li>
+        <li> background-attachment</li>
+        <li>background-clip</li>
+        <li>background-position</li>
+        <li>background-size</li>
+        <li>background</li>
+        <li>background-flag</li> =  linear-gradient
+       
+    </ul>
+
+    <div class="background-color"></div>
+    <div class="background-img"></div>
+    <div class="background-repeat"></div>
+    <div class=" background-attachment"></div>
+    <div class="background-position"></div>
+    <div class="background-size"></div>
+    <div class="background-clip">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore consectetur, obcaecati mollitia perferendis veniam maiores quod tempore quis quos ut aut dolorem soluta optio non. Architecto obcaecati vitae voluptatibus?</p>
+    </div>
+    <div  class="background"></div>
+    <div class="background-flag"></div>
+</body>
+</html>

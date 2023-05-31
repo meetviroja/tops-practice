@@ -1,0 +1,38 @@
+section{
+    background-color: #54a6b2;
+    width: 1500px;
+    height: 725px;
+    display: flex;
+    justify-content: space-between;
+}
+.countainer{
+    background-image: url(./img/wordpress-589121.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    border: solid 2px;
+    font-size: 56px;
+    color: navy;
+    margin: 10px;
+    
+}
+.box1{
+    width: 300px;
+    height: 300px;
+    border: solid 2px;
+    font-size: 56px;
+    color: navy;
+}
+#bx{
+    background-color: rgba(222, 184, 135, 0.301);
+    position: relative;
+    left: 90px;
+}
+#bs{
+    position: relative;
+    right: 90px;
+}

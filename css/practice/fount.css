@@ -1,0 +1,36 @@
+div{
+    padding: 10px;
+}
+.text-color{
+    color: darkgreen;
+    text-shadow:4px 4px 10px ;
+}
+.Text-Alignment{
+    /* color: palevioletred;
+    text-shadow: red 4px 4px 10px; */
+    width: 600px;
+    text-align: justify;
+}
+.Text-Decoration{
+    width: 500px;
+    text-decoration:underline;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.Text-Transformation{
+    width: 600px;
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    text-transform: capitalize;
+}
+.Text-Indentation{
+    width: 600px;
+    text-indent: 50px;
+    /* letter-spacing: 5px; */
+    word-spacing: 10px;
+    line-height: 50px;
+}

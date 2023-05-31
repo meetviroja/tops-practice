@@ -1,0 +1,14 @@
+div{
+    height: 500px;
+    padding: 20px;
+    margin: 10px 0;
+}
+.color{
+    background: linear-gradient(white,blue);
+}
+.flag{
+    background: linear-gradient(white,green);
+}
+.img{
+    background-image: url(./img/2location.png);
+}

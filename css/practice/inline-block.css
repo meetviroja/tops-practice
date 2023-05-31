@@ -1,0 +1,17 @@
+body{
+    background-color: rgba(0, 0, 0, 0.537);
+    background-image: url(./ai-background-business-technology-digital-transformation.jpg );
+}
+.conteiner{
+    width: 1300px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.377);
+    background-size: cover;
+}
+.cart{
+    width: 30%;
+    height: 300px;
+    border: 3px solid;
+    display: inline-block;
+    margin: 15px;
+}

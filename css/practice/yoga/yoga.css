@@ -1,0 +1,110 @@
+section{
+    background-color: #ffffff;
+}
+.row{
+    display: flex;
+}
+li a{
+    font-size: 21px;
+    color: #484f5b;
+    text-decoration: none;
+}
+.jsc{
+    justify-content: space-between;
+}
+ .sec1text ul li{
+    display: inline-block;
+    padding: 20px 20px;
+ }
+ .floral1{
+    position: absolute;
+    left: 89%;
+    top: 82%;
+}
+.brush1{
+    position: absolute;
+    right: 0%;
+    top: 89%;
+}
+.shap2{
+    position: absolute;
+    right: 1%;
+    bottom: 5%;
+}
+.floral2{
+    position: absolute;
+    left: 22%;
+    top: 65%;
+}
+.floral3{
+    position: absolute;
+    right: 82%;
+}
+.floral4{
+    position: absolute;
+    right: 3%;
+}
+.shap1{
+    position: absolute;
+    right: 7%;
+}
+.shap3{
+    position: absolute;
+    left: 25%;
+    top: 43%;
+}
+.shap4{
+    position: absolute;
+    right: 0%;
+}
+.shap5{
+    position: absolute;
+    left: 0%;
+
+}
+.img{
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+.text{
+    width: 516px;
+    height: 102px;
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 33px;
+    color: #484f5b;
+    position: absolute;
+    right: 9%;
+    bottom: 30%;
+}
+.title1{
+    font-size: 75px;
+    letter-spacing: 1px;
+    color: #484f5b;
+    font-weight: 700;
+    font-family: "Open Sans";
+    width: 516px;
+    position: absolute;
+    right: 9%;
+    top: 25%;
+}
+button{
+    width: 150px;
+    height: 40px;
+    background-color:#e6c8c3;
+    font-size: 20px;
+    border: none;
+}  
+.button{
+    position: absolute;
+    right: 33%;
+    bottom: 20%;
+    color: #484f5b;
+}
+
+
+    
+
+    
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .sec-one{
+            background-color: grey;
+            height: 100vh;
+        }
+        .text{
+            text-align: center;
+            font-size: 34px;
+            color: aliceblue;
+            padding: 100px 0 0 0;
+        }
+        .box{
+            width: 500px;
+            background-color: black;
+            align-items: center;
+            position: absolute;
+            left: 33%;
+        }
+        #username{
+            width: 450px;
+            height: 35px;
+            text-align: center;
+            font-size: 25px ;
+            margin: 20px 0 10px 25px;
+            background-color:#ffffff00;
+            color: #ffffff;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        #password{
+            width: 450px;
+            height: 35px;
+            text-align: center;
+            margin: 10px 0 10px 25px;
+            background-color:#ffffff00;
+            font-size: 25px;
+            color: #ffffff;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        #submit{
+            height: 35px;
+            width: 100px;
+            font-size: 20px;
+            position: relative;
+            left: 200px;
+            margin: 10px 0 20px 0;
+            background-color: transparent;
+            transition: 1s;
+            color: #ffffff;
+            border: #ffffff solid 2px;
+        }
+        .pre{
+            text-align: end;
+            margin: 9px 25px 9px 0;
+            text-decoration: none;
+        }
+        #usererror{
+            margin: 0 0 0 30px;
+            color: red;
+        }
+        #passerror{
+            margin: 0 0 0 30px;
+            color: red; 
+        }
+    </style>
+</head>
+<body>
+    <section class="sec-one">
+        <div class="text">
+            <h1>log in here</h1>
+        </div>
+        <div class="box">
+            <form onsubmit="return login1()">
+                <input type="text" placeholder="type your username" id="username">
+                <p id="usererror"></p>
+                <input type="password" name="" placeholder="enter your password" id="password">
+                <p id="passerror"></p>
+                <p class="pre"><a href="">forgot password?</a></p>
+                <input type="submit" value="log in" id="submit">
+            </form>
+        </div>
+    </section>
+  <script>
+    let username = document.getElementById("username")
+    let password = document.getElementById("password")
+
+    function login1() {
+        if (username.value == ""){
+            document.getElementById("usererror").innerHTML = "please enter your username "
+            event.preventDefault()
+        }
+        else if (username.value.length < 4){
+            document.getElementById("usererror").innerHTML = "min 5 char"
+        }
+        else {
+            document.getElementById("usererror").innerHTML = ""
+        }
+        if (password.value == ""){
+            document.getElementById("passerror").innerHTML = "please enter your password"
+            event.preventDefault()
+        }
+        else{
+            document.getElementById("passerror").innerHTML = ""
+        }
+    }
+  </script>
+</body>
+</html>

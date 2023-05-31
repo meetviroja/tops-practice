@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteiner{
+            height:500px;
+            background-color: cornflowerblue;
+            display: grid;
+            row-gap: 5px;
+            column-gap: 5px;
+            /* grid-template-columns: 150px 150px 150px;
+            grid-template-rows:150px 150px 150px ; */
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:100px 1fr 100px;
+            /* grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3 , 1fr); */
+        }
+        .item{
+            /* width: 150px;
+            height: 150px; */
+            background-color: chocolate;
+      
+        }
+        #head1{
+            color: aliceblue;
+            font-size: 50px;
+            grid-column-start:1 ;
+            grid-column-end: 4;
+            text-align: center;
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+        }
+        #foot{
+            text-align: center;
+            color: aliceblue;
+            font-size: 50px;
+            grid-column-start:1 ;
+            grid-column-end: 4;
+        }
+        #head2{
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="conteiner">
+        <div class="item" id="head1"> header</div>
+        <div class="item" id="head2"></div>
+        <div class="item"></div>
+        <div class="item" id="foot">footer</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    
+</body>
+</html>

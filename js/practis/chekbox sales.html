@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<form onsubmit="return invalid()">
+    <label>
+        <p>iteams</p>
+        <input type="checkbox" name="" onclick="return validform()" id="iteam1">apple no.1
+        <input type="checkbox" name="" onclick="return validform()" id="iteam2">apple no.2
+    </label>
+    <input type="submit" value="datasave">
+</form>
+<p id="output"></p>
+
+<script>
+    // let salesman = document.getElementById("iteam")
+    // salesman = Number.parseInt(salesman);
+
+    function validform() {
+        if (document.querySelector('#iteam1').checked && document.querySelector('#iteam2').checked) {
+            document.getElementById("output").innerHTML = "100"
+        }
+        else if (document.querySelector('#iteam1').checked) {
+            document.getElementById("output").innerHTML = "50"
+        }
+        else if (document.querySelector('#iteam2').checked) {
+            document.getElementById("output").innerHTML = "50"
+        }
+        else if (document.querySelector('#iteam1').checked != true && document.querySelector('#iteam2').checked != true) {
+            document.getElementById("output").innerHTML = "00"
+        }
+    }
+    function invalid() {
+        if (document.querySelector('#iteam1').checked != true && document.querySelector('#iteam2').checked != true) {
+            document.getElementById("output").innerHTML = "null"
+            event.preventDefault()
+        }
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>

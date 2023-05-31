@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="counteiner" id="home">
+        <h1 id="heading" name="name">home page</h1>
+        <p id="PH" class="pre">Lorem ipsum dolor sit amet.</p>
+        <p  class="pre">Lorem ipsum dolor sit amet.</p>
+        <p  class="pre">Lorem ipsum dolor sit amet.</p>
+        <input type="text" id="username" name="inp">
+        <input type="password" id="password">
+    </div>
+    
+
+    <script>
+        let element = document.getElementById("PH").innerHTML = "<b> somthing </b>"
+        // let element = document.getElementById("PH").innerText = " somthing"
+           console.log(element);
+           element.style.background = "red"
+
+        // let element = document.querySelector("#heading") 
+        //     element = document.querySelector(".pre") 
+        //     element = document.querySelector("p") 
+        // element.style.background = "hotpink"
+        // console.log(element);
+
+        // let element = document.getElementsByClassName("pre")
+        // console.log(element);
+    
+        // let element = document.getElementsByTagName("input")
+        // console.log(element);
+
+        // let element = document.getElementsByName("inp")
+        // console.log(element);
+
+        // let element = document.querySelectorAll(".pre")
+        // console.log(element);
+
+    </script>
+</body>
+</html>

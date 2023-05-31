@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 110px;
+        }
+        p::first-line{
+            color: red;
+        }
+        h1::after{
+            content: "*";
+        }
+        h1::before{
+            content: "_";
+        }
+        div{
+            width: 600px;
+            height: 20px;
+        }
+        div::selection{
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellat, delectus eius optio dolorem aut, quae ducimus reprehenderit id, voluptates sed! Voluptatibus recusandae quibusdam sit quasi laborum similique dolorum ipsam.
+    </p>
+    <h1>meet</h1>
+    <h1>meet</h1>
+    <h1>meet</h1>
+    <h1>meet</h1>
+    <h1>meet</h1>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, excepturi aliquam, non quidem error animi distinctio eligendi perspiciatis reprehenderit quasi rerum, deserunt commodi vitae facilis voluptatum quia ducimus repellat modi!
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onclick="return validform()">
+        <h1>how many apples did you sale</h1>
+        0 <input type="radio" name="" id="item0">
+        <br>
+        1 <input type="radio" name="" id="item1">
+        <br>
+        2 <input type="radio" name="" id="item2">
+        <br>
+        3 <input type="radio" name="" id="item3">
+        <p id="pre"></p>
+    </form>
+    <script>
+
+        function validform() {
+            if (document.querySelector('#item0').checked) {
+                document.getElementById("pre").innerHTML = "0"
+            }
+            else if (document.querySelector('#item1').checked) {
+                document.getElementById("pre").innerHTML = "50"
+            }
+            else if (document.querySelector('#item2').checked) {
+                document.getElementById("pre").innerHTML = "100"
+            }
+            else if (document.querySelector('#item3').checked) {
+                document.getElementById("pre").innerHTML = "150"
+            }
+        }
+
+    </script>
+</body>
+
+</html>

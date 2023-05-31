@@ -1,0 +1,9 @@
+div{
+    height: 500px;
+    padding: 20px;
+}
+.borderimg{
+    border: 50px solid transparent;
+  padding: 55px;
+  border-image: url(./img/poshter.png) 20% round;
+}

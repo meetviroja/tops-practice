@@ -1,0 +1,428 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+}
+
+.container {
+    width: 100%;
+}
+
+
+.col-40 {
+    width: 100%;
+}
+
+.jcs {
+    justify-content: space-between;
+}
+
+.sec-one {
+    background-image: url(./img/sec-one-bg.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.head {
+    background-color: #303030;
+}
+
+.navbar {
+    line-height: 60px;
+}
+
+.logo {
+    margin: 10px 0 0 0;
+}
+
+.links {
+    margin: 15px 0 0 0;
+}
+
+.links ul li {
+    display: block;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.search i {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 30px 0 0 0;
+}
+
+/* .sec-one-text {
+    margin: 100px 0 0 0;
+    padding: 100px 0 0 0;
+} */
+
+.sec-one-text h1 {
+    color: #ffffff;
+    font-size: 50px;
+    margin: 100px 0 20px 0;
+}
+
+.sec-one-text p {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+.button button {
+    font-size: 17px;
+    padding: 13px 20px;
+    background-color: #e8631c;
+    color: #ffffff;
+    margin: 0 0 50px 0;
+    border: none;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    ...
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+
+    .col-40 {
+        width: 55%;
+    }
+
+    .jcs {
+        justify-content: space-between;
+    }
+
+    .links ul li {
+        display: inline;
+    }
+
+    .links ul li a {
+        margin: 0 40px 0 40px;
+    }
+
+    .sec-one-text h1 {
+        font-size: 65px;
+    }
+
+    .sec-one-text p {
+        font-size: 23px;
+    }
+
+    .button button {
+        font-size: 27px;
+        padding: 15px 45px;
+        margin: 0 0 50px 0;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+
+    .col-40 {
+        width: 55%;
+    }
+
+    .jcs {
+        justify-content: space-between;
+    }
+
+    .links ul li {
+        display: inline;
+    }
+
+    .links ul li a {
+        margin: 0 15px 0 15px;
+    }
+
+    .sec-one-text h1 {
+        font-size: 75px;
+        /* margin: 10px 0 0 0; */
+    }
+
+    .sec-one-text p {
+        font-size: 27px;
+    }
+
+    .button button {
+        font-size: 27px;
+        padding: 15px 45px;
+        margin: 0 0 50px 0;
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-40 {
+        width: 40%;
+    }
+
+    .navbar {
+        line-height: 60px;
+    }
+
+    .logo {
+        margin: 10px 0 0 0;
+    }
+
+    .links {
+        margin: 15px 0 0 0;
+    }
+
+    .links ul li {
+        display: inline;
+    }
+
+    .links ul li a {
+
+        margin: 0 30px 0 0;
+        font-size: 30px;
+    }
+
+    .search i {
+        font-size: 30px;
+        margin: 30px 0 0 0;
+    }
+
+    .sec-one-text {
+        margin: 100px 0 0 0;
+        padding: 100px 0 0 0;
+    }
+
+    .sec-one-text h1 {
+        font-size: 110px;
+        margin: 100px 0 20px 0;
+    }
+
+    .sec-one-text p {
+        font-size: 30px;
+        margin: 0 0 20px 0;
+    }
+
+    .button button {
+        font-size: 27px;
+        padding: 15px 45px;
+        margin: 0 0 50px 0;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-40 {
+        width: 40%;
+    }
+
+    .navbar {
+        line-height: 60px;
+    }
+
+    .logo {
+        margin: 10px 0 0 0;
+    }
+
+    .links {
+        margin: 15px 0 0 0;
+    }
+
+    .links ul li {
+        display: inline;
+    }
+
+    .links ul li a {
+
+        margin: 0 30px 0 0;
+        font-size: 30px;
+    }
+
+    .search i {
+        font-size: 30px;
+        margin: 30px 0 0 0;
+    }
+
+    .sec-one-text {
+        margin: 100px 0 0 0;
+        padding: 100px 0 0 0;
+    }
+
+    .sec-one-text h1 {
+        font-size: 110px;
+        margin: 100px 0 20px 0;
+    }
+
+    .sec-one-text p {
+        font-size: 30px;
+        margin: 0 0 20px 0;
+    }
+
+    .button button {
+        font-size: 27px;
+        padding: 15px 45px;
+        margin: 0 0 50px 0;
+    }
+}
+
+/* section-two */
+
+.container {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.sec-two {
+    background-color: #e8631c;
+}
+
+.sec-two-text h2 {
+    padding: 80px 0 25px 0;
+    font-size: 90px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.sec-two p {
+    padding: 0 0 50px 0;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.sec-two-text {
+    margin: 0 auto;
+}
+
+.cart-img img {
+    width: 100%;
+}
+
+.cart h3 {
+    font-size: 35px;
+    color: #f0f8ff;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.cart p {
+    font-size: 20px;
+    color: #f0f8ff;
+    text-align: center;
+}
+
+.cart .box {
+    background-color: #303030;
+}
+
+.sec-two .cart {
+    padding: 0 0 90px 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    ...
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    ...
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .col-30 {
+        width: 30%;
+    }
+
+    .sec-two-text h2 {
+        padding: 80px 0 25px 0;
+        font-size: 90px;
+    }
+
+    .sec-two p {
+        padding: 0 0 50px 0;
+        font-size: 20px;
+    }
+
+    .sec-two-text {
+        margin: 0 auto;
+    }
+
+    .cart-img img {
+        width: 100%;
+    }
+
+    .cart h3 {
+        font-size: 35px;
+        padding: 12px 0;
+    }
+
+    .cart p {
+        font-size: 20px;
+    }
+
+
+    .sec-two .cart {
+        padding: 0 0 90px 0;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    ...
+}

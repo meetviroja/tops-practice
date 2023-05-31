@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            border: black 3px solid;
+            border-radius: 5px;
+            margin: 0 auto;
+            width: 45%;
+            transition: 2s;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .bgcolor {
+            background-color: rgb(240, 43, 43);
+            color: rgb(255, 255, 255);
+        }
+
+        .padding {
+            padding: 100px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="box">
+        <h1>remove class</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repudiandae ex dolor voluptatem, culpa
+            expedita, iure laborum assumenda itaque amet nulla eligendi temporibus obcaecati officiis? Aliquam
+            voluptatem voluptatum reprehenderit labore.</p>
+    </div>
+    <button id="addclass">addclass</button>
+    <button id="removeClass">removeClass</button>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#addclass").click(function () {
+                $("#box").addClass("bgcolor padding")
+            })
+        })
+        $(document).ready(function () {
+            $("#removeClass").click(function () {
+                $("#box").removeClass("padding")
+            })
+        })
+    </script>
+</body>
+
+</html>

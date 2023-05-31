@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .conteiner{
+        background-color: darkgoldenrod;
+        width: 500px;
+        margin: 0 auto;
+
+      }
+      input{
+        display: block;
+        margin: 15px auto;
+        padding: 20px 70px;
+      }
+      h1{
+        text-align: center;
+      }
+      p{
+        color: rgb(0, 17, 255);
+        text-align: center;
+        font-size: 20px;
+      }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="conteiner">
+        <h1>Loginpage</h1>
+        <form onsubmit="return vaildForm()">
+            <input type="text" placeholder="enter your usrename" id="usrename">
+            <p id="usreerror"></p>
+            <input type="password" name="" placeholder="enter your password" id="password">
+            <p id="passerror"></p>
+            <input type="submit" value="savedata" id="submit">
+        </form>
+    </div>
+
+    <script>
+        let usrename = document.getElementById("usrename")
+        let password = document.getElementById("password")
+        console.log(usrename);
+
+        function vaildForm() {
+            if(usrename.value == ""){
+                // console.log('empty');
+                document.getElementById("usreerror").innerHTML = "enter your name"
+                event.preventDefault()
+            }
+            else if (usrename.value.length < 4){
+                document.getElementById("usreerror").innerHTML = "min 5 char"
+                event.preventDefault()
+            }
+            else{
+                document.getElementById("usreerror").innerHTML = ""
+
+            }
+            if(password.value == ""){
+                document.getElementById("passerror").innerHTML = "enter your password"
+                event.preventDefault()
+            }
+            else{
+                document.getElementById("passerror").innerHTML = ""
+
+            }
+           
+        }
+    </script>
+
+</body>
+
+</html>

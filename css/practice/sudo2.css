@@ -1,0 +1,43 @@
+a:visited{
+    color: rgb(255, 0, 0);
+}
+/* a{
+    margin: 50px;
+    padding: 30px;
+} */
+a:hover{
+    border: 5px solid brown;
+    background-color: cornflowerblue;
+}
+input:focus{
+    background-color: yellow;
+    outline: 3px solid red;
+    border: none;
+}
+.bg{
+    /* border: solid 4px ; */
+    width: 500px;
+    height: 300px;
+}
+.bg{
+    background-image: url(./music-img/1\ background.png);
+    background-size: cover;
+}
+.bg:hover{
+    background-image: url(./img/wordpress-589121.jpg);
+    background-size: cover;
+}
+.bg2{
+    width: 500px;
+    height: 300px;
+    padding: 30PX 50PX;
+    margin: 40PX;
+}
+.bg2{
+    background-image: url(./img/technology-human-touch-background-modern-remake-creation-adam.jpg);
+    background-size: cover;
+}
+.bg2:hover{
+    background-image: url(./img/ai-background-business-technology-digital-transformation.jpg);
+    background-size: cover;
+}

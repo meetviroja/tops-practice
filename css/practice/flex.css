@@ -1,0 +1,59 @@
+.conteiner{
+    /* width: 1250; */
+    border: solid 3px ;
+    display: flex;
+    /* margin: 0 auto; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row-reverse; */
+    /* align-items: center; */
+    /* align-items: right ; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-shrink: 2; */
+    background-color: rgba(135, 207, 235, 0.349);
+}
+.box{
+    width: 300px;
+    height: 300px;
+   background-color: blue;
+   background-image: url(./img/wordpress-589121.jpg);
+   background-size: cover;
+   margin: 10px;
+   font-size: 50px;
+   text-align: center;
+   color: rgb(74, 158, 231);
+   
+}
+.conteiner2{
+    background-color: rgba(0, 139, 139, 0.455);
+    /* width: 1250px; */
+    /* height: 500px; */
+    border: solid 3px ;
+    display: flex;
+    /* margin: 0 auto; */
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+}
+.box2{
+    width: 300px;
+    height: 300px;
+    /* border: 3px solid ; */
+    background-color: rgba(0, 0, 0, 0.464);
+    color: aliceblue;
+    font-size: 50px;
+    text-align: center;
+    background-image: url(./music-img/1\ background.png);
+    background-size: cover;
+}

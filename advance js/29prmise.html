@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // let complate = false
+
+        function promise(complate){
+          return  new Promise(function(sec,den){
+            if(complate){
+                sec("done")
+            }
+            else{
+                den("bad") 
+            }
+        })
+        }
+
+        let itsDone = (result)=>{
+          console.log(result);
+        }
+        let itbad = (error)=>{
+          console.log(error);
+        }
+        // let promise =
+        // console.log(promise);
+        promise(true).then(itsDone)
+        promise(false).catch(itbad)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .sec{
+            height: 100vh;
+            width: 1536px;
+            background-color: black;
+        }
+        .box{
+            width: 500px;
+            background-color: #ffffff73;
+            align-items: center;
+            position: absolute;
+            left: 33%;
+        }
+        #username{
+            width: 450px;
+            height: 35px;
+            text-align: center;
+            font-size: 25px ;
+            margin: 20px 0 10px 25px;
+            background-color:#ffffff00;
+            color: #030303;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        #password{
+            width: 450px;
+            height: 35px;
+            text-align: center;
+            margin: 10px 0 10px 25px;
+            background-color:#ffffff00;
+            font-size: 25px;
+            color: #0e0e0e;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        #submit{
+            height: 35px;
+            width: 100px;
+            font-size: 20px;
+            position: relative;
+            left: 200px;
+            margin: 10px 0 20px 0;
+            background-color: transparent;
+            transition: 1s;
+            /* border: none; */
+        }
+        #submit:hover{
+            background-color: #0f0f0f69;
+            transition: 1s;
+            color: #ffffff;
+            border: #ffffff solid 2px;
+
+            
+        }
+        .pere p{
+            text-align: right;
+            margin: 9px 25px 9px 0;
+            text-decoration: none;
+        }
+        #usererror{
+            margin: 0 0 0 30px;
+            color: red;
+        }
+        #passerror{
+            margin: 0 0 0 30px;
+            color: red; 
+        }
+    </style>
+</head>
+<body>
+    <section class="sec">
+         <h1>login here</h1>
+         <form onsubmit="return meet()">
+            <input type="text" id="username" placeholder="type your username">
+            <p id="usererror"></p>
+            <input type="password" name="" id="password" placeholder="type your password">
+            <p id="passerror"></p>
+            <div class="pere">
+                <p><a href="#">forgot password ?</a></p>
+            </div>
+            <input type="submit" value="login">
+         </form>
+         <script>
+            let username = document.getElementById("username")
+            let password = document.getElementById("password")
+
+            function meet() {
+                if (username.value == ""){
+                    document.getElementById("usererror").innerHTML = "please enter username"
+                    event.preventDefault()
+                }
+                else if (username.value.length < 4){
+                    document.getElementById("usererror").innerHTML = "min 5 char"
+                    event.preventDefault()
+                }
+                else {
+                    document.getElementById("usererror").innerHTML = ""
+                }
+                if (password.value == ""){
+                    document.getElementById("passerror").innerHTML = "please enter your password"
+                    event.preventDefault()
+                }
+                else{
+                    document.getElementById("passerror").innerHTML = ""
+                }
+            }
+         </script>
+    </section>
+</body>
+</html>
